@@ -1,7 +1,8 @@
 {
   "permissions": {
     "allow": [
-      "WebFetch(domain:ishikon.net)"
+      "WebFetch(domain:ishikon.net)",
+      "Bash(start \"\" \"c:\\\\Users\\\\2105-D160\\\\OneDrive\\\\Desktop\\\\LPプロジェクト\\\\index.html\")"
     ]
   }
 }

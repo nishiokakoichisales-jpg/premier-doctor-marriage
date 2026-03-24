@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+  <!-- ========================================
+       SEO設定 ← タイトル・ディスクリプション修正箇所
+       ======================================== -->
+  <title>Premier Doctor Marriage｜医師だけと出会える結婚相談所 プレエントリー受付中</title>
+  <meta name="description" content="医師男性2000人在籍。医師だけと出会える結婚相談所「Premier Doctor Marriage」プレオープン限定30名の女性プレエントリー受付中。専任女性カウンセラーが伴走。全国16支店対応。">
+  <meta name="robots" content="index, follow">
+
+  <!-- OGP設定 ← URLとOGP画像パスを本番環境に合わせて修正 -->
+  <meta property="og:title" content="Premier Doctor Marriage｜医師だけと出会える結婚相談所">
+  <meta property="og:description" content="医師男性2000人在籍。プレオープン限定30名の女性プレエントリー受付中。">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/ogp.jpg">
+  <!-- ↓ 本番URLに差し替え -->
+  <meta property="og:url" content="https://example.com/">
+  <meta property="og:site_name" content="Premier Doctor Marriage">
+  <meta property="og:locale" content="ja_JP">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- ファビコン ← assets/favicon.ico に実ファイルを配置 -->
+  <link rel="icon" href="assets/favicon.ico">
+
+  <!-- Google Fonts（上品なセリフ＋読みやすいサンセリフ） -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Noto+Sans+JP:wght@300;400;500&family=Noto+Serif+JP:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ========================================
+       追従CTA（iOS セーフエリア対応）
+       文言修正箇所：「無料プレエントリー申込」
+       ======================================== -->
+  <div class="sticky-cta" id="stickyCta" aria-hidden="true">
+    <a href="#entry" class="sticky-cta__btn">
+      無料プレエントリー申込
+      <span class="sticky-cta__arrow" aria-hidden="true">→</span>
+    </a>
+  </div>
+
+
+  <main id="main-content">
+
+  <!-- ========================================
+       1. FV（ファーストビュー）
+       ishikon.net と同じ構造：全幅画像 + 絶対配置テキスト
+       ======================================== -->
+  <section class="fv" aria-label="ファーストビュー">
+
+    <!-- ロゴ（FV左上・固定ヘッダー化しない）
+         ロゴ画像がある場合は <img src="assets/logo.svg"> に差し替え -->
+    <div class="fv__logo-wrap">
+      <p class="fv__logo">Premier Doctor Marriage</p>
+    </div>
+
+    <!-- 全幅写真＋テキストオーバーレイ -->
+    <figure class="fv__figure">
+
+      <!-- 女性写真 ← assets/hero.png.png に配置済み
+           object-position: center top で頭が切れないよう調整 -->
+      <img
+        src="assets/hero.png.png"
+        alt="Premier Doctor Marriage代表 神谷文香"
+        class="fv__photo"
+        fetchpriority="high"
+        loading="eager"
+        width="1536"
+        height="2752"
+      >
+
+      <!-- テキストオーバーレイ（右下配置・ishikon.net準拠）
+           ← キャッチコピー・バッジ・代表名・CTAの修正箇所 -->
+      <!-- 金バッジ（医師男性在籍数）— FV左上に配置 -->
+      <div class="fv__badge-img-wrap">
+        <img
+          src="assets/goldbadge.png"
+          alt="医師男性2000人在籍"
+          class="fv__badge-img"
+          width="200"
+          height="200"
+        >
+      </div>
+
+      <figcaption class="fv__caption">
+
+        <!-- メインキャッチコピー（H1・ページに1つのみ）← 修正箇所 -->
+        <h1 class="fv__headline">
+          いい人がいないを<br>終わらせる
+        </h1>
+
+        <!-- サブコピー ← 修正箇所 -->
+        <p class="fv__subhead">医師だけと出会える結婚相談所</p>
+
+        <!-- 代表表記 ← 氏名・役職の修正箇所 -->
+        <p class="fv__rep">
+          Premier Doctor Marriage 代表&emsp;神谷文香
+        </p>
+
+        <!-- CTA ← テキスト修正箇所 -->
+        <a href="#entry" class="btn btn--primary">
+          無料プレエントリー申込
+        </a>
+
+      </figcaption>
+    </figure>
+
+    <!-- スクロールインジケーター -->
+    <div class="fv__scroll-hint" aria-hidden="true">
+      <span class="fv__scroll-line"></span>
+      <span class="fv__scroll-label">scroll</span>
+    </div>
+
+  </section>
+
+
+  <!-- ========================================
+       2. お悩み共感
+       ======================================== -->
+  <section class="pain section" aria-labelledby="pain-title">
+    <div class="container">
+
+      <div class="section-label" aria-hidden="true">FOR YOU</div>
+      <h2 class="section-title" id="pain-title">
+        こんなお悩みは<br class="sp-br">ありませんか？
+      </h2>
+
+      <!-- お悩みリスト ← テキスト修正箇所 -->
+      <ul class="pain__list" role="list">
+        <li class="pain__item reveal-up">
+          <span class="pain__icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+          </span>
+          <p class="pain__text">真剣に結婚を考えているのに、<br>ふさわしい出会いがない</p>
+        </li>
+        <li class="pain__item reveal-up" style="transition-delay:80ms">
+          <span class="pain__icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          </span>
+          <p class="pain__text">マッチングアプリに疲れた。<br>無駄な出会いで消耗している</p>
+        </li>
+        <li class="pain__item reveal-up" style="transition-delay:160ms">
+          <span class="pain__icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </span>
+          <p class="pain__text">年齢を重ねるほど、<br>真剣な相手と出会う機会が減る</p>
+        </li>
+        <li class="pain__item reveal-up" style="transition-delay:240ms">
+          <span class="pain__icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </span>
+          <p class="pain__text">相手の素性がわからないまま<br>会うのが不安</p>
+        </li>
+      </ul>
+
+    </div>
+  </section>
+
+
+  <!-- ========================================
+       3. 解決（医師限定・審査制・専任で解決できる理由）
+       ======================================== -->
+  <section class="solution section section--white" aria-labelledby="solution-title">
+    <div class="container container--narrow">
+
+      <div class="section-label" aria-hidden="true">SOLUTION</div>
+      <h2 class="section-title" id="solution-title">
+        Premier Doctor Marriageが<br>その悩みを解決します
+      </h2>
+      <p class="section-lead">
+        当サービスは「医師男性のみ」という明確な基準と、厳正な審査制を設けることで、
+        真剣な出会いを求める女性が安心して活動できる環境を整えています。
+        専任の女性カウンセラーがお一人おひとりに寄り添い、伴走します。
+      </p>
+
+      <!-- 解決ポイント3つ ← テキスト修正箇所 -->
+      <div class="solution__points">
+
+        <div class="solution__point reveal-up">
+          <div class="solution__point-num" aria-hidden="true">01</div>
+          <h3 class="solution__point-title">男性は医師のみ</h3>
+          <p class="solution__point-body">
+            在籍する男性会員はすべて医師資格保持者。
+            職業・素性が明確な方とだけ出会えるため、
+            安心して真剣交際をスタートできます。
+          </p>
+        </div>
+
+        <div class="solution__point reveal-up" style="transition-delay:100ms">
+          <div class="solution__point-num" aria-hidden="true">02</div>
+          <h3 class="solution__point-title">審査制で安心の環境</h3>
+          <p class="solution__point-body">
+            写真・プロフィールを当社基準で審査（品位・雰囲気・清潔感を含む総合審査）。
+            基準を満たした方のみご入会いただくことで、
+            質の高い出会いが続きます。
+          </p>
+        </div>
+
+        <div class="solution__point reveal-up" style="transition-delay:200ms">
+          <div class="solution__point-num" aria-hidden="true">03</div>
+          <h3 class="solution__point-title">専任カウンセラーが伴走</h3>
+          <p class="solution__point-body">
+            担当の女性コンシェルジュが、プロフィール作成から
+            お相手との交際まで丁寧にサポート。
+            一人で不安を抱えながら活動する必要はありません。
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========================================
+       4. 強み（4つ）
+       ======================================== -->
+  <section class="strengths section" aria-labelledby="strengths-title">
+    <div class="container">
+
+      <div class="section-label" aria-hidden="true">OUR STRENGTHS</div>
+      <h2 class="section-title" id="strengths-title">選ばれる4つの理由</h2>
+
+      <!-- 強みカードグリッド ← 数値・テキスト修正箇所 -->
+      <div class="strengths__grid stagger-group">
+
+        <article class="strength-card stagger-child">
+          <div class="strength-card__icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          </div>
+          <div class="strength-card__num" aria-hidden="true">01</div>
+          <h3 class="strength-card__title">男性は医師のみ</h3>
+          <p class="strength-card__body">
+            在籍する男性会員はすべて医師資格保持者。
+            職業が明確な相手とだけ出会えます。
+          </p>
+        </article>
+
+        <article class="strength-card stagger-child">
+          <div class="strength-card__icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <!-- ↓ 在籍数の修正箇所 -->
+          <div class="strength-card__num" aria-hidden="true">02</div>
+          <h3 class="strength-card__title">医師男性<strong>2,000人</strong>在籍</h3>
+          <p class="strength-card__body">
+            豊富なお相手の中から、あなたのご希望に沿った
+            マッチングをご提案します。
+          </p>
+        </article>
+
+        <article class="strength-card stagger-child">
+          <div class="strength-card__icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <!-- ↓ 支店数の修正箇所 -->
+          <div class="strength-card__num" aria-hidden="true">03</div>
+          <h3 class="strength-card__title">全国<strong>16</strong>支店</h3>
+          <p class="strength-card__body">
+            全国16支店のネットワークで、
+            どの地域にお住まいの方もご利用いただけます。
+          </p>
+        </article>
+
+        <article class="strength-card stagger-child">
+          <div class="strength-card__icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          </div>
+          <div class="strength-card__num" aria-hidden="true">04</div>
+          <h3 class="strength-card__title">専任カウンセラーが伴走</h3>
+          <p class="strength-card__body">
+            担当の女性コンシェルジュが活動全般をサポート。
+            初めての方も安心してご利用いただけます。
+          </p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========================================
+       5. プレオープン募集
+       ======================================== -->
+  <section class="preopen section section--white" aria-labelledby="preopen-title">
+    <div class="container container--narrow">
+
+      <div class="section-label" aria-hidden="true">PRE-OPEN</div>
+      <h2 class="section-title" id="preopen-title">
+        プレオープン募集について
+      </h2>
+
+      <!-- 募集カード ← 定員・審査説明の修正箇所 -->
+      <div class="preopen__card">
+
+        <div class="preopen__badge" aria-label="先着30名限定">
+          先着 <strong>30名</strong> 限定
+        </div>
+
+        <p class="preopen__lead">
+          本格オープンに先立ち、厳選した女性会員様を限定募集しております。
+          プレオープン期間中は特別な条件でご参加いただける機会です。
+        </p>
+
+        <ul class="preopen__points" role="list">
+          <li class="preopen__point">
+            <span class="preopen__check" aria-hidden="true">✓</span>
+            <span>プレオープン期間中の女性会員費用負担なし</span>
+          </li>
+          <li class="preopen__point">
+            <span class="preopen__check" aria-hidden="true">✓</span>
+            <span>写真・プロフィールの審査制（当社基準の総合審査）</span>
+          </li>
+          <li class="preopen__point">
+            <span class="preopen__check" aria-hidden="true">✓</span>
+            <span>専任の女性カウンセラーによる個別サポート</span>
+          </li>
+          <li class="preopen__point">
+            <span class="preopen__check" aria-hidden="true">✓</span>
+            <span>医師男性2,000人の中からご紹介</span>
+          </li>
+        </ul>
+
+        <p class="preopen__note">
+          ※ 審査は写真・プロフィールをもとに、品位・雰囲気・清潔感を含む
+          当社基準の総合審査を行います。審査結果により、次ステップへのご案内が
+          できない場合がございますことをご了承ください。
+        </p>
+
+        <!-- CTA ← CTAテキスト修正箇所 -->
+        <a href="#entry" class="btn btn--primary btn--center">
+          無料プレエントリー申込
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========================================
+       6. ご利用の流れ
+       ======================================== -->
+  <section class="flow section" aria-labelledby="flow-title">
+    <div class="container">
+
+      <div class="section-label" aria-hidden="true">HOW IT WORKS</div>
+      <h2 class="section-title" id="flow-title">ご利用の流れ</h2>
+
+      <!-- ステップリスト ← ステップ内容の修正箇所 -->
+      <ol class="flow__list" role="list">
+
+        <li class="flow__step reveal-up">
+          <div class="flow__step-num" aria-label="ステップ1">
+            <span aria-hidden="true">STEP</span>
+            <strong>1</strong>
+          </div>
+          <div class="flow__step-body">
+            <h3 class="flow__step-title">プレエントリー申込</h3>
+            <p class="flow__step-text">
+              本ページ下部のフォームより、必要事項をご入力のうえお申し込みください。
+              所要時間は約2分です。
+            </p>
+          </div>
+        </li>
+
+        <li class="flow__step reveal-up" style="transition-delay:80ms">
+          <div class="flow__step-num" aria-label="ステップ2">
+            <span aria-hidden="true">STEP</span>
+            <strong>2</strong>
+          </div>
+          <div class="flow__step-body">
+            <h3 class="flow__step-title">担当者よりご連絡</h3>
+            <p class="flow__step-text">
+              申込後、担当カウンセラーよりご連絡を差し上げます。
+              ご都合のよいお時間にオンラインでご相談いただけます。
+            </p>
+          </div>
+        </li>
+
+        <li class="flow__step reveal-up" style="transition-delay:160ms">
+          <div class="flow__step-num" aria-label="ステップ3">
+            <span aria-hidden="true">STEP</span>
+            <strong>3</strong>
+          </div>
+          <div class="flow__step-body">
+            <h3 class="flow__step-title">審査・ご登録</h3>
+            <p class="flow__step-text">
+              写真・プロフィールをご提出いただき、当社基準の審査を実施します。
+              通過された方に、正式登録のご案内をお送りします。
+            </p>
+          </div>
+        </li>
+
+        <li class="flow__step reveal-up" style="transition-delay:240ms">
+          <div class="flow__step-num" aria-label="ステップ4">
+            <span aria-hidden="true">STEP</span>
+            <strong>4</strong>
+          </div>
+          <div class="flow__step-body">
+            <h3 class="flow__step-title">活動スタート</h3>
+            <p class="flow__step-text">
+              専任カウンセラーとともに活動を開始。
+              医師男性のご紹介から交際まで、一貫してサポートします。
+            </p>
+          </div>
+        </li>
+
+      </ol>
+    </div>
+  </section>
+
+
+  <!-- ========================================
+       7. Q&A（details/summary で JS 不要）
+       ======================================== -->
+  <section class="faq section section--white" aria-labelledby="faq-title">
+    <div class="container container--narrow">
+
+      <div class="section-label" aria-hidden="true">FAQ</div>
+      <h2 class="section-title" id="faq-title">よくあるご質問</h2>
+
+      <!-- FAQ アコーディオン ← 質問・回答の修正箇所 -->
+      <div class="faq__list" role="list">
+
+        <details class="faq__item" role="listitem">
+          <summary class="faq__question">
+            <span>本当に無料ですか？</span>
+            <span class="faq__icon" aria-hidden="true"></span>
+          </summary>
+          <div class="faq__answer">
+            <p>
+              プレオープン期間中は、女性会員様の費用負担はございません。
+              安心してプレエントリーをお申し込みください。
+              ※ 本格オープン後の費用については、登録時に改めてご案内いたします。
+            </p>
+          </div>
+        </details>
+
+        <details class="faq__item" role="listitem">
+          <summary class="faq__question">
+            <span>審査の内容を教えてください</span>
+            <span class="faq__icon" aria-hidden="true"></span>
+          </summary>
+          <div class="faq__answer">
+            <p>
+              写真・プロフィールをご提出いただき、品位・雰囲気・清潔感を含む
+              当社独自の総合基準にて審査を行います。
+              審査通過の方には、次ステップ（正式登録）のご案内をお送りします。
+              結果については個別にご連絡いたします。
+            </p>
+          </div>
+        </details>
+
+        <details class="faq__item" role="listitem">
+          <summary class="faq__question">
+            <span>相談だけでも申し込めますか？</span>
+            <span class="faq__icon" aria-hidden="true"></span>
+          </summary>
+          <div class="faq__answer">
+            <p>
+              はい、もちろんです。まずはお気軽にプレエントリーフォームよりお問い合わせください。
+              担当カウンセラーが丁寧にご説明いたします。
+              ご入会を強制することは一切ありません。
+            </p>
+          </div>
+        </details>
+
+        <details class="faq__item" role="listitem">
+          <summary class="faq__question">
+            <span>結婚目的以外の男性はいますか？</span>
+            <span class="faq__icon" aria-hidden="true"></span>
+          </summary>
+          <div class="faq__answer">
+            <p>
+              ご入会時に結婚の意思確認を行っております。
+              また当社の利用規約に反する行動が確認された場合は、
+              速やかに適切な対応を行う体制を整えております。
+              安心してご利用いただける環境づくりを最優先にしております。
+            </p>
+          </div>
+        </details>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========================================
+       8. CTA セクション（フォーム直前）
+       ======================================== -->
+  <section class="cta-section section" aria-labelledby="cta-title">
+    <div class="container container--narrow">
+      <div class="cta-section__inner">
+
+        <div class="section-label" aria-hidden="true">ENTRY</div>
+        <h2 class="section-title cta-section__title" id="cta-title">
+          いい人がいないを、<br>終わらせる第一歩を。
+        </h2>
+        <!-- ↓ ミクロコピー修正箇所 -->
+        <p class="cta-section__body">
+          プレオープン限定30名。<br>
+          まずは無料でエントリーしてみてください。
+        </p>
+
+        <!-- CTA ← CTAテキスト修正箇所 -->
+        <a href="#entry" class="btn btn--primary btn--large">
+          無料プレエントリー申込
+        </a>
+
+        <p class="cta-section__note">審査あり・先着30名・プレオープン期間中は女性無料</p>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========================================
+       9. フォームセクション（#entry）
+       iframe埋め込み枠 ← フォームURLを差し替え
+       ======================================== -->
+  <section id="entry" class="form-section section section--cream" aria-labelledby="form-title">
+    <div class="container container--narrow">
+
+      <div class="section-label" aria-hidden="true">FORM</div>
+      <h2 class="section-title" id="form-title">無料プレエントリー申込</h2>
+      <p class="form-section__lead">
+        下記フォームに必要事項をご入力のうえ、お申し込みください。
+      </p>
+
+      <!-- ↓ フォームiframe埋め込み枠
+           src を Zoho Forms 等の実際のiframe URLに差し替え
+           例: src="https://forms.zohopublic.com/xxx/form/xxx/formperma/xxx"
+           height はフォームの内容に応じて調整 -->
+      <div class="form-section__iframe-wrap">
+        <iframe
+          src="about:blank"
+          title="プレエントリーフォーム"
+          class="form-section__iframe"
+          width="100%"
+          height="600"
+          frameborder="0"
+          loading="lazy"
+          aria-label="プレエントリー申込フォーム"
+        >
+          <p>フォームを表示できません。<a href="TBD" target="_blank" rel="noopener">こちら</a>からお申し込みください。</p>
+        </iframe>
+
+        <!-- ↓ フォームURL設定前のプレースホルダー。iframe差し替え後に削除 -->
+        <div class="form-placeholder" aria-hidden="true">
+          <p class="form-placeholder__text">
+            ここにフォームが表示されます<br>
+            <small>（<code>src="about:blank"</code> を実際のZoho FormsなどのURLに差し替えてください）</small>
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ========================================
+       10. フッター（リンク3つのみ）
+       ← URLはプレースホルダー、本番環境に合わせて差し替え
+       ======================================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+
+      <p class="footer__logo">Premier Doctor Marriage</p>
+
+      <nav class="footer__nav" aria-label="フッターナビゲーション">
+        <ul class="footer__nav-list" role="list">
+          <!-- ↓ 各URLを本番URLに差し替え -->
+          <li><a href="/privacy" class="footer__link">プライバシーポリシー</a></li>
+          <li><a href="/tokushoho" class="footer__link">特定商取引法に基づく表示</a></li>
+          <li><a href="/company" class="footer__link">会社概要</a></li>
+        </ul>
+      </nav>
+
+      <p class="footer__copy">
+        <small>&copy; <span id="currentYear"></span> Premier Doctor Marriage. All rights reserved.</small>
+      </p>
+
+    </div>
+  </footer>
+
+
+  </main><!-- /#main-content -->
+
+  <script src="script.js"></script>
+</body>
+</html>
